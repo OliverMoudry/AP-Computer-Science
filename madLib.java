@@ -24,7 +24,7 @@ public class madLib {
         String[] wordList = { "verb", "noun", "plural noun", "past tense verb", "adjective", "historic event", "adverb",
                 "name of someone in the room", "measurement", "measurement in time" };
         for (int i = 0; i < wordList.length; i++) {
-            String word = findIndex(wordList, i);
+            String word = wordList[i];
             return word;
         }
         
@@ -42,8 +42,16 @@ public class madLib {
        question(questionWord(),questionQ());
 
 
-        
-
+        /*
+        try
+        {
+            Thread.sleep(2000);
+        }
+        catch (InterruptedException e)
+        {
+            
+            e.printStackTrace();
+        }
         //System.out.println("Here is the story you created: ");
        /*System.out.println("Once upon a " + noun1 + " there was a " + animal1 + " who was named "
                 + personName1 + ". One fine summer " + noun2 + " , " + personName1 + " was " +
