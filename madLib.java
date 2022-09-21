@@ -3,14 +3,14 @@ import java.util.Random;
 import java.util.Scanner;
 import java.util;
 
-public class day3 {
+public class madLib {
 
     public static String questionQ(){
         Random rand = new Random();
             int randQuestion = rand.nextInt(6);
             String[] questionList = {"Please enter a ", "Enter a ", "I need a ", "Give me a ",
                     "I would like a ", "The computer requires a "};
-        String question = Arrays.asList(questionList).indexOf(randQuestion);
+            String question = questionList[randQuestion];
                 return question;
 
     }
