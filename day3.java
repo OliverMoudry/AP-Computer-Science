@@ -39,8 +39,6 @@ public class day3 {
     }
 
     public static void main(String[] args) {
-       questionQ();
-       questionWord();
        question(questionWord(),questionQ());
 
 
