@@ -9,8 +9,8 @@ public static void print(String string) {
 }
 
 // Random number
-public static int random(){
+public static int random(int bound){
   Random rand = new Random();
-  rand = Random.nextint();
+  rand = Random.nextint(bound);
   return rand;
 }
