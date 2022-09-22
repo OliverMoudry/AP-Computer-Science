@@ -5,6 +5,24 @@ import java.util;
 
 public class madLib {
 
+
+    // Print next line method
+    public static void println(String string) {
+        System.out.println(string);
+    }
+
+    // Print method
+    public static void print(String string) {
+        System.out.print(string);
+    }
+
+    // Random number
+    public static int random(){
+        Random rand = new Random();
+        rand = Random.nextint();
+        return rand;
+    }
+
     public static String questionQ(){
         Random rand = new Random();
             int randQuestion = rand.nextInt(6);
@@ -14,11 +32,6 @@ public class madLib {
                 return question;
 
     }
-
-    
-
-
-
 
     public static String questionWord() {
         String[] wordList = { "verb", "noun", "plural noun", "past tense verb", "adjective", "historic event", "adverb",

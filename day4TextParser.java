@@ -1,13 +1,11 @@
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
-
-import javax.annotation.processing.SupportedOptions;
 import javax.security.auth.Subject;
 
 import java.util;
 
-public class day4 {
+public class day4TextParser {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Enter a word lol");
@@ -27,10 +25,10 @@ public class day4 {
         int lastThird = length;
 
         System.out.println(word + " is " + length + " characters long");
-        System.out.println("The middle letter is " + halfway);
-        System.out.println("The first third of the word is " + third);
-        System.out.println("The middle third is " + secondThird);
-        System.out.println("The last third is " + lastThird);
+        System.out.println("The middle letter is " + word.charAt(halfway));
+        System.out.println("The first third of the word is " + word.substring(0, third));
+        System.out.println("The middle third is " + word.substring(third, secondThird));
+        System.out.println("The last third is " + word.substring(secondThird, lastThird));
 
     }
 
