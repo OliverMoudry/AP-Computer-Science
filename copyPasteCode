@@ -7,3 +7,10 @@ public static void println(String string) {
 public static void print(String string) {
   System.out.print(string);
 }
+
+// Random number
+public static int random(){
+  Random rand = new Random();
+  rand = Random.nextint();
+  return rand;
+}
