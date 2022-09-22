@@ -1,0 +1,4 @@
+// Print method
+public static void print(String string) {
+  System.out.print(string);
+}
