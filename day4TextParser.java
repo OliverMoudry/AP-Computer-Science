@@ -24,7 +24,7 @@ public class day4 {
         int halfway = length/2;
         int third = length/3;
         int secondThird = length*2/3;
-        int lastThird = length*3/3;
+        int lastThird = length;
 
         System.out.println(word + " is " + length + " characters long");
         System.out.println("The middle letter is " + halfway);
