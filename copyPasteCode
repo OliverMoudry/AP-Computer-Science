@@ -1,6 +1,6 @@
 // Print next line method
 public static void println(String string) {
-  System.out.print(string);
+  System.out.println(string);
 }
 
 // Print method
