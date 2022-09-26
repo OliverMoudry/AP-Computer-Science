@@ -1,0 +1,25 @@
+import java.util;
+import java.util.Scanner;
+
+public class loops {
+  public static void main(String args[]) {
+  Scanner keyboard = new Scanner(System.in);
+
+    for (int age = 0; age <= 10; age++){
+        System.out.print("Your age is " + age + " ");
+    }
+    for (int age = 9; age >= 0; age--){
+        System.out.print("Your age is " + age + " ");
+    }
+    System.out.println("I need a number");
+  int numb = keyboard.nextInt();
+  int factorial = 1;
+  int runningNumber = 1;
+  while (runningNumber < numb) {
+    runningNumber++;
+    factorial *= runningNumber; 
+  } 
+  System.out.println("!" + numb + " equals " + factorial);
+  }
+
+}
