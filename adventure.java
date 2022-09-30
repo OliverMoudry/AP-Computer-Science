@@ -57,8 +57,6 @@ public class adventure {
         choice = keyboard.nextInt();
       }
       if (choice == 1) {
-        String input = "";
-        String input2 = "";
             print("ERROR: 404. DUE TO TECHNICAL ISSUES YOU HAVE BEEN SIGNED OUT. PLEASE ENTER A USERNAME: ");
         input = keyboard.nextLine();
         println("PLEASE ENTER A PASSWORD: ");
@@ -66,9 +64,9 @@ public class adventure {
         while (!input.equals(username) || !input2.equals(password)) {
           println("YOUR USERNAME OR PASSWORD WAS INCORRECT. PLEASE TRY AGAIN");
           println("PLEASE ENTER A USERNAME: ");
-          input = keyboard.nextLine();
+          String input = keyboard.nextLine();
           println("PLEASE ENTER A PASSWORD: ");
-          input2 = keyboard.nextLine();
+          String input2 = keyboard.nextLine();
         }
 
       }
