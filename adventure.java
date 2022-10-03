@@ -63,10 +63,14 @@ public class adventure {
         input2 = keyboard.nextLine();
         while (!input.equals(username) || !input2.equals(password)) {
           println("YOUR USERNAME OR PASSWORD WAS INCORRECT. PLEASE TRY AGAIN");
-          println("PLEASE ENTER A USERNAME: ");
+          print("PLEASE ENTER A USERNAME: ");
           String input = keyboard.nextLine();
+          
           println("PLEASE ENTER A PASSWORD: ");
           String input2 = keyboard.nextLine();
+          
+          println("Welcome back, " + username + "!");
+          println("");
         }
 
       }
