@@ -16,7 +16,7 @@ public class [title] {
   // Random number
   public static int random(int bound){
     Random rand = new Random();
-    rand = Random.nextint(bound);
+    rand = rand.nextInt(bound);
     return rand;
   }
   
