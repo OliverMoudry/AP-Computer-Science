@@ -91,7 +91,42 @@ public class adventure {
                   "---------------------------------------------------------------------------------------------------------------------------");
               println(
                   "You pull away from the computer tired. You check your phone and realize that it's already 3 am. You curse to yourself realizing that your mom would kill you if she knew you stayed up this early. You get up from your chair but fall over when you try to stand. You are confused at first with the pain but try to get up quickly thinking your mom might've heard the thump. You can't feel your left leg so thinking it's asleep you try to stand on your right leg. You fall over again but manage to catch yourself with your chair this time. You pull yourself up really confused this time. You reach to grab your left foot to shake it awake but you feel nothing. Your hands fill with air and you look down. Your knee is there. But your leg isn't.");
+            } else {
+              println("You stand and do nothing as your mouth moves on its own. Your horrified but then-------------------");
+              println(
+                  "YOU HAVE BEEN DISCONNECTED FROM THE GAME DUE TO INTERNET INSTABILITY. PLEASE CHECK YOUR MOTEM OR ROUTER AND TRY AGAIN.");
+              println(
+                  "---------------------------------------------------------------------------------------------------------------------------");
+              println(
+                  "You pull away from the computer tired. You check your phone and realize that it's already 3 am. You curse to yourself realizing that your mom would kill you if she knew you stayed up this early. You get up from your chair but fall over when you try to stand. You are confused at first with the pain but try to get up quickly thinking your mom might've heard the thump. You can't feel your left leg so thinking it's asleep you try to stand on your right leg. You fall over again but manage to catch yourself with your chair this time. You pull yourself up really confused this time. You reach to grab your left foot to shake it awake but you feel nothing. Your hands fill with air and you look down. Your knee is there. But your leg isn't.");
             }
+          } else {
+              println("You change your mind at the last second and turn your back on the clearing. You don't know how but you've just saved yourself from a horrible fate. You see a deer scamper into the forest and realize that it could be your next meal. Do you 1. Try to chase after it and risk not catching it and starving to death, or 2. Turn back to the clearing where you can guarantee food and safety. ");
+              if (choice == 1) {
+                
+              }
+              else {
+                println(
+                "You walk slowly toward the clearing and upon entering it, you realize that the smell is coming from a ʜ∪Ꮇᴀɴ ʟᎬ𝐺 lying on the ground. You jump back with disgust but then something washes over you and you begin to walk toward it. You try as hard as you can but your body will not obey anything your mind is telling it. Your horrified as you realize that what you are looking at is a human leg cut off just below the knee. You get closer and closer. 5 meters. 4 meters. 3 meters. 2 meters. 1 meter. Suddenly you're there and your body is bending down to pick it up. You try as hard as you can to stop but you can't move a single muscle. Your hand grabs it and moves it closer to your face. You suddenly realize what is about to happen but before you can do anything you feel your teeth sink into the leg and rip out a chunk. Do you 1. Try to scream for help, or 2. Do nothing as the actions are repeated. Teeth sink in. Rip off a chunk of flesh. Chew. Swallow.");
+                choice = keyboard.nextInt();
+                if (choice == 1) {
+                  println(
+                  "You try to open your mouth and scream but another chunk of flesh is shoved in just as you open it. You look around as far as you can but ---------------------------------------------------------------");
+                  println(
+                  "YOU HAVE BEEN DISCONNECTED FROM THE GAME DUE TO INTERNET INSTABILITY. PLEASE CHECK YOUR MOTEM OR ROUTER AND TRY AGAIN.");
+                 println(
+                  "---------------------------------------------------------------------------------------------------------------------------");
+                 println(
+                  "You pull away from the computer tired. You check your phone and realize that it's already 3 am. You curse to yourself realizing that your mom would kill you if she knew you stayed up this early. You get up from your chair but fall over when you try to stand. You are confused at first with the pain but try to get up quickly thinking your mom might've heard the thump. You can't feel your left leg so thinking it's asleep you try to stand on your right leg. You fall over again but manage to catch yourself with your chair this time. You pull yourself up really confused this time. You reach to grab your left foot to shake it awake but you feel nothing. Your hands fill with air and you look down. Your knee is there. But your leg isn't.");
+              } else {
+                  println("You stand and do nothing as your mouth moves on its own. Your horrified but then-------------------");
+                  println(
+                  "YOU HAVE BEEN DISCONNECTED FROM THE GAME DUE TO INTERNET INSTABILITY. PLEASE CHECK YOUR MOTEM OR ROUTER AND TRY AGAIN.");
+                  println(
+                  "---------------------------------------------------------------------------------------------------------------------------");
+                  println(
+                  "You pull away from the computer tired. You check your phone and realize that it's already 3 am. You curse to yourself realizing that your mom would kill you if she knew you stayed up this early. You get up from your chair but fall over when you try to stand. You are confused at first with the pain but try to get up quickly thinking your mom might've heard the thump. You can't feel your left leg so thinking it's asleep you try to stand on your right leg. You fall over again but manage to catch yourself with your chair this time. You pull yourself up really confused this time. You reach to grab your left foot to shake it awake but you feel nothing. Your hands fill with air and you look down. Your knee is there. But your leg isn't.");
+              }
           }
         }
 
