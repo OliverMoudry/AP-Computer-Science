@@ -13,11 +13,10 @@ public class [title] {
     System.out.print(string);
   }
 
-  // Random number
+   // Random number
   public static int random(int bound){
     Random rand = new Random();
-    rand = rand.nextInt(bound);
-    return rand;
+    return rand.nextInt(bound);
   }
   
   public static void main (String args[]) {
