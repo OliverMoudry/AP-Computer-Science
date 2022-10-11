@@ -33,8 +33,12 @@ public class RPS {
         int comChoice = random(RPS.length);
         println("I need Rock, Paper, or Scissors.");
         String playerChoice = keyboard.nextLine();
-        if (playerChoice.equalsIgnoreCase("rock") && comChoice)
-        RPS[comChoice]
+        if (playerChoice.equalsIgnoreCase("rock") && RPS[comChoice].equalsIgnoreCase("paper")) {
+          println("You lost. Boohoo.")
+        } else if (playerChoice.equalsIgnoreCase("rock") && RPS[comChoice].equalsIgnoreCase("scissors") ) {
+          println("");
+        }
+        
 
 
 
