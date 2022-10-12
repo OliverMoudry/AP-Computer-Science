@@ -24,32 +24,33 @@ public class RPS {
     Scanner keyboard = new Scanner(System.in);
     println("I will beat you in a rock paper scissors game. Please choose a difficulty. 1: Easy, 2: Medium, 3: Hard, 4: Impossible.");
     int difficulty = keyboard.nextInt();
-    while (difficulty != 1 || difficulty != 2 || difficulty != 3 || difficulty != 4){
+    while (difficulty != 1 && difficulty != 2 && difficulty != 3 && difficulty != 4){
         println("Please enter 1, 2, 3, or 4");
         difficulty = keyboard.nextInt();
     }
     if (difficulty == 1 || difficulty == 2 || difficulty == 3) {
         String[] RPS ={"Rock", "Paper", "Scissors"};
         int comChoice = random(RPS.length);
+        
         println("I need Rock, Paper, or Scissors.");
         String playerChoice = keyboard.nextLine();
-        if (playerChoice.equalsIgnoreCase("rock") && RPS[comChoice].equalsIgnoreCase("paper")) {
-          println("You lost. L + Bozo.")
-        } else if (playerChoice.equalsIgnoreCase("rock") && RPS[comChoice].equalsIgnoreCase("scissors") ) {
-          println("You won. Pog.");
-        } else if (playerChoice.equalsIgnoreCase("rock") && RPS[comChoice].equalsIgnoreCase("rock")) {
-          println("You tied. Kinda mid at this game ngl.");
-        } else if (playerChoice.equalsIgnoreCase("paper") && RPS[comChoice].equalsIgnoreCase("paper")) {
-          println("You tied. Kinda mid at this game ngl.")
-        } else if (playerChoice.equalsIgnoreCase("paper") && RPS[comChoice].equalsIgnoreCase("scissors") ) {
+        if (playerChoice.equals("Rock") && RPS[comChoice].equals("Paper")) {
           println("You lost. L + Bozo.");
-        } else if (playerChoice.equalsIgnoreCase("paper") && RPS[comChoice].equalsIgnoreCase("rock")) {
+        } else if (playerChoice.equals("Rock") && RPS[comChoice].equals("Scissors") ) {
           println("You won. Pog.");
-        } else if (playerChoice.equalsIgnoreCase("scissors") && RPS[comChoice].equalsIgnoreCase("paper")) {
-          println("You won. Pog.")
-        } else if (playerChoice.equalsIgnoreCase("scissors") && RPS[comChoice].equalsIgnoreCase("scissors") ) {
+        } else if (playerChoice.equals("Rock") && RPS[comChoice].equals("Rock")) {
           println("You tied. Kinda mid at this game ngl.");
-        } else if (playerChoice.equalsIgnoreCase("scissors") && RPS[comChoice].equalsIgnoreCase("rock")) {
+        } else if (playerChoice.equals("Paper") && RPS[comChoice].equals("Paper")) {
+          println("You tied. Kinda mid at this game ngl.");
+        } else if (playerChoice.equals("Paper") && RPS[comChoice].equals("Scissors") ) {
+          println("You lost. L + Bozo.");
+        } else if (playerChoice.equals("Paper") && RPS[comChoice].equals("Rock")) {
+          println("You won. Pog.");
+        } else if (playerChoice.equals("Scissors") && RPS[comChoice].equals("Paper")) {
+          println("You won. Pog.");
+        } else if (playerChoice.equals("Scissors") && RPS[comChoice].equals("Scissors") ) {
+          println("You tied. Kinda mid at this game ngl.");
+        } else if (playerChoice.equals("Scissors") && RPS[comChoice].equals("Rock")) {
           println("You lost. L + Bozo.");
         } 
         
@@ -60,15 +61,15 @@ public class RPS {
     } else if (difficulty == 4) {
         println("Please choose Rock, Paper, or Scissors.");
         String playerChoice = keyboard.nextLine();
-        while (!playerChoice.equalsIgnoreCase("rock") || !playerChoice.equalsIgnoreCase("paper") || !playerChoice.equalsIgnoreCase("scissors")) {
+        while (!playerChoice.equals("Rock") || !playerChoice.equals("Paper") || !playerChoice.equals("Scissors")) {
             println("I need either Rock, Paper, or Scissors.");
             playerChoice = keyboard.nextLine();
         }
-        if (playerChoice.equalsIgnoreCase("rock")) {
+        if (playerChoice.equals("Rock")) {
             println("YOU LOSE! THE COMPUTER CHOSE PAPER AND YOU CHOSE ROCK.");
-        } else if (playerChoice.equalsIgnoreCase("paper")) {
+        } else if (playerChoice.equals("Paper")) {
             println("YOU LOSE! THE COMPUTER CHOSE SCISSORS AND YOU CHOSE PAPER.");
-        } else if (playerChoice.equalsIgnoreCase("scissors")) {
+        } else if (playerChoice.equals("Scissors")) {
             println("YOU LOSE! THE COMPUTER CHOSE ROCK AND YOU CHOSE SCISSORS.");
         }
 
@@ -80,4 +81,3 @@ public class RPS {
 
 
 }
-
