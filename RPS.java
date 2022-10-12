@@ -28,7 +28,7 @@ public class RPS {
         println("Please enter 1, 2, 3, or 4");
         difficulty = keyboard.nextInt();
     }
-    if (difficulty == 1 || difficulty == 2 || difficulty == 3) {
+    if (difficulty == 1 || difficulty == 2) {
         String[] RPS ={"Rock", "Paper", "Scissors"};
         int comChoice = random(RPS.length);
         
@@ -55,10 +55,7 @@ public class RPS {
         } 
         
 
-
-
-
-    } else if (difficulty == 4) {
+    } else if (difficulty == 3) {
         println("Please choose Rock, Paper, or Scissors.");
         String playerChoice = keyboard.nextLine();
         while (!playerChoice.equals("Rock") && !playerChoice.equals("Paper") && !playerChoice.equals("Scissors")) {
@@ -66,10 +63,62 @@ public class RPS {
             playerChoice = keyboard.nextLine();
         }
         if (playerChoice.equals("Rock")) {
-            println("YOU LOSE! THE COMPUTER CHOSE PAPER AND YOU CHOSE ROCK.");
+          String[] PS = {"Rock", "Scissors"};
+          int computerRandom = random(PS.length);
+          String[] computerChoices = {"Paper", PS[computerRandom]};
+          String finalComChoice = computerChoices[random(computerChoices.length)];
+          if (finalComChoice.equals("Paper")) {
+                println("You lost. L + Bozo.");
+          } else if (finalComChoice.equals(PS[computerRandom])) {
+                if (PS[computerRandom].equals("Scissors")) {
+                        println("You won. Pog.");
+                } else if (PS[computerRandom].equals("Rock")) {
+                        println("You tied. Kinda mid at this game ngl.");
+                }
+          }
         } else if (playerChoice.equals("Paper")) {
-            println("YOU LOSE! THE COMPUTER CHOSE SCISSORS AND YOU CHOSE PAPER.");
+            String[] PS = {"Rock", "Paper"};
+            int computerRandom = random(PS.length);
+            String[] computerChoices = {"Scissors", PS[computerRandom]};
+            String finalComChoice = computerChoices[random(computerChoices.length)];
+            if (finalComChoice.equals("Scissors")) {
+                  println("You lost. L + Bozo.");
+            } else if (finalComChoice.equals(PS[computerRandom])) {
+                  if (PS[computerRandom].equals("Paper")) {
+                          println("You tied. Kinda mid at this game ngl.");
+                  } else if (PS[computerRandom].equals("Rock")) {
+                          println("You won. Pog.");
+                  }
+            }
         } else if (playerChoice.equals("Scissors")) {
+            String[] PS = {"Scissors", "Paper"};
+            int computerRandom = random(PS.length);
+            String[] computerChoices = {"Rock", PS[computerRandom]};
+            String finalComChoice = computerChoices[random(computerChoices.length)];
+            if (finalComChoice.equals("Rock")) {
+                  println("You lost. L + Bozo.");
+            } else if (finalComChoice.equals(PS[computerRandom])) {
+                  if (PS[computerRandom].equals("Scissors")) {
+                          println("You tied. Kinda mid at this game ngl.");
+                  } else if (PS[computerRandom].equals("Paper")) {
+                          println("You won. Pog.");
+                  }
+      }
+  
+    
+
+    } else if (difficulty == 4) {
+        println("Please choose Rock, Paper, or Scissors.");
+        String playerChoice1 = keyboard.nextLine();
+        while (!playerChoice1.equals("Rock") && !playerChoice1.equals("Paper") && !playerChoice1.equals("Scissors")) {
+            println("I need either Rock, Paper, or Scissors.");
+            playerChoice1 = keyboard.nextLine();
+        }
+        if (playerChoice1.equals("Rock")) {
+            println("YOU LOSE! THE COMPUTER CHOSE PAPER AND YOU CHOSE ROCK.");
+        } else if (playerChoice1.equals("Paper")) {
+            println("YOU LOSE! THE COMPUTER CHOSE SCISSORS AND YOU CHOSE PAPER.");
+        } else if (playerChoice1.equals("Scissors")) {
             println("YOU LOSE! THE COMPUTER CHOSE ROCK AND YOU CHOSE SCISSORS.");
         }
 
