@@ -61,7 +61,7 @@ public class RPS {
     } else if (difficulty == 4) {
         println("Please choose Rock, Paper, or Scissors.");
         String playerChoice = keyboard.nextLine();
-        while (!playerChoice.equals("Rock") || !playerChoice.equals("Paper") || !playerChoice.equals("Scissors")) {
+        while (!playerChoice.equals("Rock") && !playerChoice.equals("Paper") && !playerChoice.equals("Scissors")) {
             println("I need either Rock, Paper, or Scissors.");
             playerChoice = keyboard.nextLine();
         }
