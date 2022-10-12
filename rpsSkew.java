@@ -10,7 +10,15 @@ else if (difficulty == 3) {
           int computerRandom = random(PS.length);
           String[] computerChoices = {"Paper", PS[computerRandom]};
           String finalComChoice = computerChoices[random(computerChoices.length)];
-          
+          if (finalComChoice.equals("Paper")) {
+                println("You lost. L + Bozo.");
+          } else if (finalComChoice.equals(PS[computerRandom]) {
+                if (PS[computerRandom].equals("Scissors") {
+                        println("You won. Pog.");
+                } else if (PS[computerRandom].equals("Rock")) {
+                        println("You tied. Kinda mid at this game ngl.");
+                }
+          }
         }
 
 
