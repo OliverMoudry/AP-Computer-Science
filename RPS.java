@@ -34,10 +34,24 @@ public class RPS {
         println("I need Rock, Paper, or Scissors.");
         String playerChoice = keyboard.nextLine();
         if (playerChoice.equalsIgnoreCase("rock") && RPS[comChoice].equalsIgnoreCase("paper")) {
-          println("You lost. Boohoo.")
+          println("You lost. L + Bozo.")
         } else if (playerChoice.equalsIgnoreCase("rock") && RPS[comChoice].equalsIgnoreCase("scissors") ) {
-          println("");
-        }
+          println("You won. Pog.");
+        } else if (playerChoice.equalsIgnoreCase("rock") && RPS[comChoice].equalsIgnoreCase("rock")) {
+          println("You tied. Kinda mid at this game ngl.");
+        } else if (playerChoice.equalsIgnoreCase("paper") && RPS[comChoice].equalsIgnoreCase("paper")) {
+          println("You tied. Kinda mid at this game ngl.")
+        } else if (playerChoice.equalsIgnoreCase("paper") && RPS[comChoice].equalsIgnoreCase("scissors") ) {
+          println("You lost. L + Bozo.");
+        } else if (playerChoice.equalsIgnoreCase("paper") && RPS[comChoice].equalsIgnoreCase("rock")) {
+          println("You won. Pog.");
+        } else if (playerChoice.equalsIgnoreCase("scissors") && RPS[comChoice].equalsIgnoreCase("paper")) {
+          println("You won. Pog.")
+        } else if (playerChoice.equalsIgnoreCase("scissors") && RPS[comChoice].equalsIgnoreCase("scissors") ) {
+          println("You tied. Kinda mid at this game ngl.");
+        } else if (playerChoice.equalsIgnoreCase("scissors") && RPS[comChoice].equalsIgnoreCase("rock")) {
+          println("You lost. L + Bozo.");
+        } 
         
 
 
