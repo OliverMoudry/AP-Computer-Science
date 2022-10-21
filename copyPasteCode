@@ -18,6 +18,14 @@ public class [title] {
     Random rand = new Random();
     return rand.nextInt(bound);
   }
+  // Sleep the program
+  static void sleep(int milliseconds) {
+    try {
+      Thread.sleep(milliseconds);
+    } catch (InteruptedException e) {
+      Thread.currentThread().interrupt();
+    }
+  }
   
   public static void main (String args[]) {
     Scanner keyboard = new Scanner(System.in);
