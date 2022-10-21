@@ -31,6 +31,8 @@ public class houseProject extends JPanel {
     Random rand = new Random();
     return rand.nextInt(bound);
   }
+  
+  public static 
 
   final int SCREEN_WIDTH = 1920;
   final int SCREEN_HEIGHT = 1057;
@@ -41,15 +43,21 @@ public class houseProject extends JPanel {
     
     g.setColor(Color.BLACK);
     g.fillRect(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2);
+    
+    while (true) {
+    panel.repaint();
+    
+    }
+   
 
 
   }
 
   public static void main(String[] args) {
 
-    var panel = new houseProject();
+    houseProject panel = new houseProject();
 
-    var frame = new JFrame("House Project");
+    JFrame frame = new JFrame("House Project");
     frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.getContentPane().add(panel, BorderLayout.CENTER);
