@@ -1,4 +1,3 @@
-
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -34,20 +33,18 @@ public class houseProject extends JPanel {
   
   public static 
 
-  final int SCREEN_WIDTH = 1920;
-  final int SCREEN_HEIGHT = 1057;
+  final int SCREEN_WIDTH = getSize(WIDTH);
+  final int SCREEN_HEIGHT = getSize(HEIGHT);
 
   public void paintComponent(Graphics g) {
     super.paintComponent(g);
     System.out.println(getSize());
     
     g.setColor(Color.BLACK);
-    g.fillRect(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2);
+    g.fillRect(SCREEN_WIDTH, (SCREEN_HEIGHT / 3) * 2, SCREEN_WIDTH, (SCREEN_HEIGHT / 3) * 2);
     
-    while (true) {
-    panel.repaint();
+  
     
-    }
    
 
 
