@@ -30,24 +30,42 @@ public class houseProject extends JPanel {
     Random rand = new Random();
     return rand.nextInt(bound);
   }
-  
-  public static 
-
-  final int SCREEN_WIDTH = getSize(WIDTH);
-  final int SCREEN_HEIGHT = getSize(HEIGHT);
 
   public void paintComponent(Graphics g) {
     super.paintComponent(g);
-    System.out.println(getSize());
-    
+    int SCREEN_WIDTH = getSize().width;
+    int SCREEN_HEIGHT = getSize().height;
+    g.setColor(Color.BLUE.brighter().brighter().brighter().brighter());
+    g.fillRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+
+    g.setColor(Color.GREEN.darker());
+    g.fillRect(0, (SCREEN_HEIGHT / 3) * 2, SCREEN_WIDTH, (SCREEN_HEIGHT / 3) * 2); // grass
+    g.setColor(Color.ORANGE.darker().darker().darker());
+    g.fillRect((SCREEN_WIDTH / 3), (SCREEN_HEIGHT / 3), 500, 400); // house
+
+    for (int i = (SCREEN_WIDTH / 3) + 100; i < (SCREEN_WIDTH / 3) + 500; i += 200) { // windows
+      g.setColor(Color.WHITE);
+      g.fillRect(i, SCREEN_HEIGHT / 3 + 50, 100, 100);
+    }
     g.setColor(Color.BLACK);
-    g.fillRect(SCREEN_WIDTH, (SCREEN_HEIGHT / 3) * 2, SCREEN_WIDTH, (SCREEN_HEIGHT / 3) * 2);
-    
-  
-    
-   
+    g.drawLine(SCREEN_WIDTH / 3 + 150, SCREEN_HEIGHT / 3 + 400, SCREEN_WIDTH / 3 + 150, SCREEN_HEIGHT / 3 + 250); // door
+    g.drawLine(SCREEN_WIDTH / 3 + 250, SCREEN_HEIGHT / 3 + 400, SCREEN_WIDTH / 3 + 250, SCREEN_HEIGHT / 3 + 250);
+    g.fillArc(SCREEN_WIDTH / 3 + 150, SCREEN_HEIGHT / 3 + 200, 100, 100, 0, 180);
+    g.setColor(Color.ORANGE.darker().darker().darker());
+    drawTriangle(g, SCREEN_WIDTH / 3, SCREEN_HEIGHT / 3, SCREEN_WIDTH / 3 + 500, SCREEN_HEIGHT / 3, SCREEN_WIDTH / 2,
+        SCREEN_HEIGHT / 4); // roof
+        g.setColor(Color.GREEN);
+    g.fillRect(SCREEN_WIDTH/4, SCREEN_HEIGHT/4 *3, 300, 100); // bush
+    g.fillRect(SCREEN_WIDTH/4 * 2, SCREEN_HEIGHT/4 * 3, 300, 100); // bush
+    g.setColor(Color.ORANGE.darker().darker().darker());
+    g.fillRect(SCREEN_WIDTH/4, SCREEN_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT); // tree trunk NOT FINISHED!
+    g.fillOval(SCREEN_HEIGHT, SCREEN_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT);// tree leaves NOT FINISHED!
+  }
 
-
+  public void drawTriangle(Graphics g, int x1, int y1, int x3, int y3, int x2, int y2) {
+    int[] xpoints = { x1, x2, x3 };
+    int[] ypoints = { y1, y2, y3 };
+    g.fillPolygon(xpoints, ypoints, 3);
   }
 
   public static void main(String[] args) {
@@ -59,7 +77,6 @@ public class houseProject extends JPanel {
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.getContentPane().add(panel, BorderLayout.CENTER);
     frame.setVisible(true);
-    
 
   }
 }
