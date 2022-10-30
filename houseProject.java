@@ -83,11 +83,15 @@ public class houseProject extends JPanel {
     g.setColor(Color.GREEN);
     g.fillRect(SCREEN_WIDTH / 4, SCREEN_HEIGHT / 4 * 3, 300, 100); // bush
     g.fillRect(SCREEN_WIDTH / 4 * 2, SCREEN_HEIGHT / 4 * 3, 300, 100); // bush
-    //g.setColor(Color.ORANGE.darker().darker().darker());
-    // g.fillRect(SCREEN_WIDTH/4, SCREEN_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT); //
-    // tree trunk NOT FINISHED!
-    // g.fillOval(SCREEN_HEIGHT, SCREEN_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT);// tree
-    // leaves NOT FINISHED!
+    g.drawString("124 Conch Street", SCREEN_WIDTH/3 + 300, SCREEN_HEIGHT/3 * 2); // adress
+    g.setColor(Color.BLACK);
+    g.fillOval(SCREEN_HEIGHT/4 - 100, SCREEN_HEIGHT/4 * 3, 50, 50);
+    g.fillOval(SCREEN_HEIGHT/4 + 50, SCREEN_HEIGHT/4 * 3, 50, 50);
+    g.setColor(Color.RED);
+    drawTriangle(g, SCREEN_WIDTH/4 - 275, SCREEN_HEIGHT/4 * 3 + 10, SCREEN_WIDTH/4 - 225, SCREEN_HEIGHT/4 * 3 - 150, SCREEN_WIDTH/4 -75, SCREEN_HEIGHT/4 * 3 + 10);
+    drawTriangle(g, SCREEN_WIDTH/4 - 225, SCREEN_HEIGHT/4 * 3 - 150, SCREEN_WIDTH/4 - 75, SCREEN_HEIGHT/4 * 3 - 150, SCREEN_WIDTH/4 -75, SCREEN_HEIGHT/4 * 3 + 10);
+    g.setColor(Color.WHITE);
+    g.fillRect(SCREEN_WIDTH/4 - 225, SCREEN_HEIGHT/4 * 3 - 100, 50, 50);
     
     if (mouseX >= SCREEN_WIDTH/3 + 150 && mouseX <= SCREEN_WIDTH/3 + 250 && mouseY >= SCREEN_HEIGHT/3 + 300 && mouseY <= SCREEN_HEIGHT/3 + 450 ) {
       setColor(g, random(255), random(255), random(255));
