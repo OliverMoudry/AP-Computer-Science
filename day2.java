@@ -4,7 +4,7 @@ import java.util.random.*;
 
 import java.util.*;
 
-public class lessons {
+public class day2 {
 
     public static void main(String[] args) {
         Random rand = new Random();
