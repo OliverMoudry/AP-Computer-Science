@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.util;
+import java.util.*;
 import java.sql.Array;
 import java.util.Random;
 

@@ -14,7 +14,7 @@ public class day2 {
         Scanner keyboard = new Scanner(System.in);
 
         System.out.println("Number");
-        int input = myObj.nextInt();
+        int input = keyboard.nextInt();
         roundsPassed++;
 
         while (input != randNumb) {

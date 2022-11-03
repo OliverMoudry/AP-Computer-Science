@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.*;
 import java.util.Random;
 
-public class [title] {
+public class multiplicationTable {
   // Print next line method
   public static void println(String string) {
     System.out.println(string);
@@ -29,6 +29,7 @@ public class [title] {
   
   public static void main (String args[]) {
     Scanner keyboard = new Scanner(System.in);
+    
   
   }
 

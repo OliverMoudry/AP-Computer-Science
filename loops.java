@@ -1,5 +1,6 @@
-import java.util;
+import java.util.*;
 import java.util.Scanner;
+import java.util.random.*;
 
 public class loops {
 
@@ -16,7 +17,7 @@ public class loops {
     // Random number
     public static int random(int bound) {
         Random rand = new Random();
-        rand = Random.nextint(bound);
+        return Random.nextint(bound);
         return rand;
     }
 

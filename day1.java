@@ -1,7 +1,7 @@
 import java.util.Scanner;
-import java.util;
+import java.util.*;
 
-public class Main {
+public class day1 {
     public static void main (String args[]){
 
 		System.out.println("Your First Name: ");
