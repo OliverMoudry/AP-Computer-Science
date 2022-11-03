@@ -1,19 +1,9 @@
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Point;
-import javax.swing.SwingUtilities;
-import java.awt.Image;
-import java.awt.Toolkit;
-import java.util.Random;
+import java.awt.*;
 import java.awt.MouseInfo;
-import java.util.concurrent.TimeUnit;
 
-import com.sun.tools.javac.Main;
+import java.util.Random;
 
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import javax.swing.*;
 
 public class houseProject extends JPanel {
   private static final long serialVersionUID = 7148504528835036003L;
