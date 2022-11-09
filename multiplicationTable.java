@@ -45,7 +45,6 @@ public class multiplicationTable extends JPanel {
 
 
   public static void main(String[] args) {
-      Scanner keyboard = new Scanner(System.in);
 
       multiplicationTable panel = new multiplicationTable();
 
@@ -54,6 +53,15 @@ public class multiplicationTable extends JPanel {
       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       frame.getContentPane().add(panel, BorderLayout.CENTER);
       frame.setVisible(true);
+
+      Scanner keyboard = new Scanner(System.in);
+      print("What number would you like to go to? ");
+      int number = keyboard.nextInt();
+
+
+      
+
+      
 
       while (true) {
         panel.repaint();
