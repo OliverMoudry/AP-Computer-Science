@@ -60,28 +60,30 @@ public class startShape {
                 prln(" ");
             }
         } else if (shape.equalsIgnoreCase("right triangle")) {
-            for (int y = 0; y < height; y ++) {
+            for (int y = 0; y < height; y++) {
                 for (int x = 0; x <= y; x++) {
                     pr(" * ");
                 }
-    
+
                 prln(" ");
-            }    
+            }
         } else if (shape.equalsIgnoreCase("isosceles triangle")) {
-            for (int y = 0; y < height/2; y ++) {
-                for (int x = 0; x < y; x++) {
+            for (int y = 0; y < height / 2; y++) {
+                for (int x = 0; x <= y; x++) {
                     pr(" * ");
                 }
-    
+
                 prln(" ");
-            }    
-            for (int y = height/2; y <= height; y ++) {
-                for (int x = width; x > y; x--) {
+            }
+
+            for (int y = height / 2 + 1; y > 0; y--) {
+                for (int x = y; x > 0; x--) {
                     pr(" * ");
                 }
-    
+
                 prln(" ");
-            }    
+            }
+            
         }
     }
 
