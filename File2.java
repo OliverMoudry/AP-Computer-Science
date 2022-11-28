@@ -1,6 +1,8 @@
 import java.util.*;
 
-public class [title] {
+import javax.swing.plaf.nimbus.NimbusLookAndFeel;
+
+public class File2 {
   // Print next line method
   public static void println(String string) {
     System.out.println(string);
@@ -24,7 +26,6 @@ public class [title] {
       Thread.currentThread().interrupt();
     }
   }
-
   // Factorial function
   static int factorial(int number) {
     int i,fact = 1;     
@@ -33,9 +34,17 @@ public class [title] {
     }
     return fact;
   }
+
+
   
   public static void main (String args[]) {
     Scanner keyboard = new Scanner(System.in);
+
+    print("F(x) = (x!)*2, x =");
+    int x = keyboard.nextInt();
+    Function function = new Function();
+
+    print( "F(x) = " + function.MathFunction(x));
   
   }
 

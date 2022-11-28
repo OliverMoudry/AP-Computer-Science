@@ -24,11 +24,22 @@ class MultiClass{
             
     }
 
+    public void shuffleCharacters(String word, int shuffles) {
+      ArrayList<String> shuffledWord = new ArrayList<String>();
+      for (int i = 0; i < word.length(); i ++) {
+        String currentChar = word.substring(i, i+1);
+        shuffledWord.add(currentChar);
+      }
+      for (int i = 0; i < word.length(); i++) {
+        System.out.print(shuffledWord.indexOf(i));
+      }
+    }
+
 
 
     public String toString(){
 
-        return "F(" + x + ") = 3(" + x + ") + 5 = " + ((3 * x) + 5) + ", G(" + x + ") = 4(" + x + ") - 8 = " + ((4 * x) - 8) + ", Your new string is " + input + ", your word is even: " + isLengthEven();
+        return "F(" + x + ") = 3(" + x + ") + 5 = " + ((3 * x) + 5) + ", G(" + x + ") = 4(" + x + ") - 8 = " + ((4 * x) - 8) + ", Your new string is " + input + ", your word is even: " + isLengthEven() + ", Your new shuffled word is: " + shuffleCharacters(input, );
     }
 }
 
@@ -72,6 +83,7 @@ public class Classes {
     functions.MathFunctions(x);
     functions.removeLastCharacter(word);
     functions.isLengthEven();
+    functions.shuffleCharacters(word, x);
 
     println(functions.toString());
   
