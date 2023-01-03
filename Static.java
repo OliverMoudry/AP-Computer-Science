@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Function {
+public class Static {
   // Print next line method
   public static void println(String string) {
     System.out.println(string);
@@ -24,6 +24,7 @@ public class Function {
       Thread.currentThread().interrupt();
     }
   }
+
   // Factorial function
   static int factorial(int number) {
     int i,fact = 1;     
@@ -33,34 +34,21 @@ public class Function {
     return fact;
   }
 
-  public int MathFunction(int X) {
-    return (factorial(X))*2;
+  public Static () {
+    
   }
 
-  public int exponentSolver(int number, int exponent) {
-    int newnum = number;
-    for(int i = 1; i < exponent; i++){    
-      newnum *= number;   
+  public static void Henry(String haircolor) {
+    if (haircolor.equalsIgnoreCase("ginger")) {
+        println("ginger");
+    } else {
+        println("not ginger");
     }
-    return newnum;
   }
-   
   
   public static void main (String args[]) {
     Scanner keyboard = new Scanner(System.in);
-  
-    println("F(x) = (x!)*2, x = ");
-    int x = keyboard.nextInt();
-    Function function = new Function();
-
-    println( "F(x) = " + function.MathFunction(x));
-
-    println("Please enter a number");
-    int X = keyboard.nextInt();
-    println("Please enter an exponent");
-    int Y = keyboard.nextInt();
-
-    println(function.exponentSolver(X, Y) + " ");
+    Henry("Ginger");
 
   }
 

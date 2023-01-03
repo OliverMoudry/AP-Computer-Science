@@ -40,11 +40,18 @@ public class File2 {
   public static void main (String args[]) {
     Scanner keyboard = new Scanner(System.in);
 
-    print("F(x) = (x!)*2, x =");
+    println("F(x) = (x!)*2, x = ");
     int x = keyboard.nextInt();
     Function function = new Function();
 
-    print( "F(x) = " + function.MathFunction(x));
+    println( "F(x) = " + function.MathFunction(x));
+
+    println("Please enter a number");
+    int X = keyboard.nextInt();
+    println("Please enter an exponent");
+    int Y = keyboard.nextInt();
+
+    println(function.exponentSolver(X, Y) + " ");
   
   }
 
