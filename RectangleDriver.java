@@ -2,13 +2,11 @@ public class RectangleDriver {
 
   public static void main(String[] args) {
 
-    // create an instance of an object using the default constructor
     Rectangle r1 = new Rectangle();
 
-    // create an instance of an object using the constructor with parameters
     Rectangle r2 = new Rectangle(5, 12, 13);
 
-    System.out.println(r1);   // prints the object using its toString() method
+    System.out.println(r1);
     System.out.println(r1.area());
     System.out.println(r1.perimeter());
     r1.scale(3);

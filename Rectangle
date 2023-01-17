@@ -1,0 +1,40 @@
+import java.util.*;
+
+public class Rectangle {
+  
+    private int length;
+    private int width;
+
+    public Rectangle() {
+        length = 1;
+        width = 1;
+    }
+
+    public Rectangle(int Length, int Width) {
+        length = Length;
+        width = Width;
+    }
+
+    public String toString() {
+        return length + "," + width;
+    }
+
+    public int area() {
+        return length * width;
+    }
+
+    public int perimeter() {
+        return (length * 2) + (width * 2)
+    }
+
+    public void scale(int factor) {
+        length = length*factor;
+        width = width*factor;
+    }
+
+    
+
+
+
+}
+
