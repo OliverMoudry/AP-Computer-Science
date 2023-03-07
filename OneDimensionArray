@@ -1,0 +1,65 @@
+import java.util.*;
+
+public class OneDimensionArray {
+  // Print next line method
+  public static void println(String string) {
+    System.out.println(string);
+  }
+
+  // Print method
+  public static void print(String string) {
+    System.out.print(string);
+  }
+
+   // Random number
+  public static int random(int bound){
+    Random rand = new Random();
+    return rand.nextInt(bound);
+  }
+  // Sleep the program
+  static void sleep(int milliseconds) {
+    try {
+      Thread.sleep(milliseconds);
+    } catch (InterruptedException e) {
+      Thread.currentThread().interrupt();
+    }
+  }
+
+  // Factorial function
+  static int factorial(int number) {
+    int i,fact = 1;     
+    for(i = 1; i <= number; i++){    
+      fact = fact * i;    
+    }
+    return fact;
+  }
+
+  public int[] oneDArray() { //CREATE list ARRAY
+    return int[] list = {1, 2, 3, 4, 5};
+  }
+
+  public void countAdd(int[] list) { // SET INT VAR SUM = 0 AND FOR I < LIST.LENGTH, ADD THE COUNT OF THE CURRENT INDEX OF LIST 
+  int sum = 0;
+  for (int i = 0; i < list.length; i++) {
+    sum += list[i];
+  } 
+  System.out.println("The sum of all values in the array is: " + sum);
+  }
+
+  public void searchMaxMin(int[] list) { // TAKE THE INTEGER LIST AND CYCLE THROUGH IT 
+    int min = list[0];
+    for (int i = 1; i < list.length; i++) {
+      if (list[i] < min) {
+        min = list[i];
+      }
+    }
+    System.out.println("The minimum value in the array is: " + min);
+  }
+  
+  public static void main (String args[]) {
+    Scanner keyboard = new Scanner(System.in);
+  }
+
+
+}
+
