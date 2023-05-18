@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class OneDimensionArray {
@@ -34,30 +35,47 @@ public class OneDimensionArray {
     return fact;
   }
 
-  public int[] oneDArray() { //CREATE list ARRAY
-    return int[] list = {1, 2, 3, 4, 5};
+  public static int[] newArray() { //CREATE LIST ARRAY
+    return new int[] {1, 2, 3, 4, 5};
   }
 
-  public void countAdd(int[] list) { // SET INT VAR SUM = 0 AND FOR I < LIST.LENGTH, ADD THE COUNT OF THE CURRENT INDEX OF LIST 
+  public static int countAdd(int[] list) { // SET INT VAR SUM = 0 AND FOR I < LIST.LENGTH, ADD THE COUNT OF THE CURRENT INDEX OF LIST 
   int sum = 0;
   for (int i = 0; i < list.length; i++) {
     sum += list[i];
   } 
-  System.out.println("The sum of all values in the array is: " + sum);
+  return sum;
   }
 
-  public void searchMaxMin(int[] list) { // TAKE THE INTEGER LIST AND CYCLE THROUGH IT 
+  public static int searchMaxMin(int[] list) { // TAKE THE INTEGER LIST AND CYCLE THROUGH IT SAVING A MIN AND OVERWRITING IT IF A NEW SMALL NUMBER IS FOUND
     int min = list[0];
     for (int i = 1; i < list.length; i++) {
       if (list[i] < min) {
         min = list[i];
       }
     }
-    System.out.println("The minimum value in the array is: " + min);
+    return min;
+  }
+
+  public static int[] swapInsertDelete(int[] list) { // CYCLE THROUGH THE LIST AND SET THE CURRENT INDEX TO THE NEXT INDEX
+    for (int i = 0; i < list.length; i++) {
+      if (i < list.length - 1) {
+        list[i] = list[i+1];
+      } else {
+        list[i] = (list[i] + 1);
+      }
+      
+    }
+    return list;
   }
   
   public static void main (String args[]) {
-    Scanner keyboard = new Scanner(System.in);
+
+    for (int i = 0; i < swapInsertDelete(newArray()).length; i++) {
+      System.out.println(swapInsertDelete(newArray())[i]);
+    }
+    
+
   }
 
 

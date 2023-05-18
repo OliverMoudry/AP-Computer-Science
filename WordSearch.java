@@ -39,26 +39,42 @@ public class WordSearch {
 
     String[] letters = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S",
         "T", "U", "V", "W", "X", "Y", "Z" };
-
+    String[] wordSearch = new String[50];
     String[] lettersInWord = new String[word.length()];
 
-    for (int i = 0; i < word.length(); i++) {
-      lettersInWord[i] = String.valueOf(word.charAt(i));
+    for (int i = 0; i < wordSearch.length; i++) {
+      wordSearch[i] = letters[random(letters.length)];
+    }
+    for (int l = 0; l < word.length(); l++) {
+      lettersInWord[l] = String.valueOf(word.charAt(l));
+    }
+    for (int n = 0; n < lettersInWord.length; n++) {
+      wordSearch[n+15] = lettersInWord[0];
+    }
+    
+    int numberTracker = 0;
+    for (int x = 0; x < 10; x++) {
+      for (int y = 0; y < 5; y++)
+        System.out.println(wordSearch[numberTracker]);
+        println(" ");
+        numberTracker++;
     }
 
-    for (int x = 0; x < 10; x++) {
-
-      for (int y = 0; y < 10; y++) {
-        print(letters[random(letters.length)] + " ");
+    for (int p = 0; p < wordSearch.length; p++) {
+      for (int o = 0; 0 <= 5; o++) {
+        if (0 == 5) {
+          System.out.println(" ");
+        } else {
+          System.out.println(wordSearch[p]);
+        }
+        
       }
-
-      println(" ");
     }
   }
 
 
   public static void main(String args[]) {
     Scanner keyboard = new Scanner(System.in);
-    wordTable("Cat");
+    
   }
 }
